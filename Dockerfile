@@ -14,6 +14,8 @@ RUN dotnet build "Solytic.CodingChallenge.WebApplication.csproj" -c Release -o /
 FROM build AS publish
 RUN dotnet publish "Solytic.CodingChallenge.WebApplication.csproj" -c Release -o /app/publish
 
+
+
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
