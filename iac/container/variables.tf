@@ -19,18 +19,6 @@ variable "container_registry_name" {
 }
 
 
-variable "app_plan_name" {
-  type        = string
-  description = "Azure App Service Pricing Plan Name"
-  default     = "webapp-asp-solytic-ga"
-}
-
-
-variable "web_app_name" {
-  type        = string
-  description = "Azure Web App Name"
-  default     = "MySolyticWebAppGA"
-}
 
 
 variable "registry_name" {
