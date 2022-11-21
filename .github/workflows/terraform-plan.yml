@@ -29,10 +29,6 @@ jobs:
         run: terraform init
         working-directory: ./iac
 
-      - name: Terraform Format
-        run: terraform fmt -check
-        working-directory: ./iac
-
       - name: Terraform Plan
         run: terraform plan
         working-directory: ./iac
