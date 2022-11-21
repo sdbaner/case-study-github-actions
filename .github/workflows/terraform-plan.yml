@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - iac/
+      - ./iac
   workflow_dispatch:
 
 
@@ -27,6 +27,7 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+        working-directory: ./iac
 
       - name: Terraform Format
         run: terraform fmt -check
