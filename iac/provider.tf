@@ -6,7 +6,7 @@ terraform {
     }
   }
     backend "azurerm" {
-        resource_group_name  = "tfstate"
+        resource_group_name  = "tfstate-ga"
         storage_account_name = "mytfstatestorage"
         container_name       = "tfstate-ga"
         key                  = "admin/terraform.tfstate"
